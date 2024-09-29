@@ -60,42 +60,23 @@
 									<div id="css-script-menu">
   
     <div class="galWrapper">
-
-      <div class="container">
-        <input
-          class="checkbox-all"
-          id="all"
-          type="radio"
-          name="checkbox"
-          checked=""
-        />
-        <label for="all">All</label>
-        <input class="checkbox-posters" id="posters" type="radio" name="checkbox" />
-        <label for="posters">Posters</label>
-        <input class="checkbox-chars" id="chars" type="radio" name="checkbox" />
-        <label for="chars">Character Design</label>
-        <input class="checkbox-comics" id="comics" type="radio" name="checkbox" />
-        <label for="comics">Comics</label>
-        <div class="seperator"></div>
-        <!-- project cards-->
-        <div class="cards">
-          <div class="project posters"></div>
-          <div class="project chars"></div>
-          <div class="project comics"></div>
-          <div class="project posters"></div>
-          <div class="project chars"></div>
-          <div class="project comics"></div>
-          <div class="project posters"></div>
-          <div class="project chars"></div>
-          <div class="project comics"></div>
-          <div class="project posters"></div>
-          <div class="project chars"></div>
-          <div class="project comics"></div>
-        </div>
-      </div>
-    </div>
+<section class="portfolioGal">
+	<ul>
+		<li class="list active" data-filter="all">All</li>
+		<li class="list" data-filter="posters">Posters</li>
+		<li class="list" data-filter="charDesign">Character Design</li>
+		<li class="list" data-filter="comics">Comics</li>
+	</ul>
+	<div class="drawing">
+		<div class="drawingBox" data-item="posters"><img src=""></div>
+		<div class="drawingBox" data-item="charDesign"><img src=""></div>
+		<div class="drawingBox" data-item="comics"><img src=""></div>
+		<div class="drawingBox" data-item="posters"><img src=""></div>
+		<div class="drawingBox" data-item="charDesign"><img src=""></div>
+		<div class="drawingBox" data-item="comics"><img src=""></div>
+	</div>
+</section>
 								</div>
-							</section>
 
 						
 					</div>
@@ -119,6 +100,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gallery.js"></script>
 
 	</body>
 </html>

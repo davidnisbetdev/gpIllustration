@@ -1,158 +1,54 @@
-h1,.lead { text-align: center; }
-h1 { margin-top: 150px; }
-
 .galWrapper {
+  padding: 20px;
   width: 100%;
-  padding: 60px 0;
-  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
 }
 
-[type="radio"]:checked,
-[type="radio"]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
-
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label {
-  position: relative;
-  padding-left: 12px;
-  padding-right: 12px;
-  letter-spacing: 3px;
-  cursor: pointer;
-  line-height: 30px;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #888;
-  margin-right: 10px;
-  margin-left: 10px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
-  content: "";
-  border-radius: 2px;
-  height: 20px;
-  padding: 5px;
-  background-color: #e74c3c;
-  position: absolute;
-  bottom: 0;
-  left: 6px;
-  top: -4px;
-  z-index: -1;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-[type="radio"]:not(:checked) + label:after {
-  opacity: 0;
-  width: 0;
-}
-
-[type="radio"]:checked + label:after {
-  opacity: 1;
-  width: calc(100% - 24px);
-}
-
-.checkbox-all:checked + label:after,
-.checkbox-all:not(:checked) + label:after {
-  background-color: hotpink;
-}
-
-.checkbox-posters:checked + label:after,
-.checkbox-posters:not(:checked) + label:after {
-  background-color: #f1c40f;
-}
-
-.checkbox-chars:checked + label:after,
-.checkbox-chars:not(:checked) + label:after {
-  background-color: #ff932b;
-}
-
-.checkbox-comics:checked + label:after,
-.checkbox-comics:not(:checked) + label:after {
-  background-color: #64e1fe;
-}
-
-.checkbox-all:checked + label {
-  margin-left: 17px;
-}
-
-.seperator {
-  width: 100%;
-  height: 30px;
-}
-
-.cards {
+.portfolioGal ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  width: 800px;
+  margin-bottom: 20px
 }
 
-.project {
-  border-radius: 4px;
-  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.3s linear;
+.portfolioGal ul li {
+  list-style: none;
+  background: #fff;
+  padding: 12px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
-.project.posters {
-  border: 3px solid #f1c40f;
+.portfolioGal ul li.active {
+  background: #20548B;
+  color: #fff;
 }
+.drawing {
+  display: flex;
+  justify-content: center;
 
-.project.chars {
-  border: 3px solid #ff932b;
 }
-
-.project.comics {
-  border: 3px solid #64e1fe;
+.drawing .drawingBox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  display: block;
 }
-
-.project.posters,
-.project.chars,
-.project.comics {
-  opacity: 0;
-  transform: scale(0);
-  padding: 0;
-  margin: 0;
-  visibility: hidden;
-  border-width: 0;
+.drawing .itemBox.hide {
+  display: none;
 }
-
-.checkbox-all:checked ~ .cards .project.posters,
-.checkbox-all:checked ~ .cards .project.chars,
-.checkbox-all:checked ~ .cards .project.project.comics,
-.checkbox-posters:checked ~ .cards .project.posters,
-.checkbox-chars:checked ~ .cards .project.chars,
-.checkbox-comics:checked ~ .cards .project.comics {
-  opacity: 1;
-  min-height: 140px;
-  min-width: calc(22% - 28px);
-  padding: 0 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 20px;
-  visibility: visible;
-  transform: scale(1);
-  border-width: 3px;
-}
-
-@media only screen and (max-width: 650px) {
-  .container {
-    width: 100%;
-  }
-
-  label {
-    display: block;
-  }
-
-  .cards {
-    flex-direction: column;
-    width: auto;
-  }
+.drawing .drawingBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
