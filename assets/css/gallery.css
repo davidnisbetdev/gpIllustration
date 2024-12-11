@@ -32,7 +32,11 @@
 .drawing {
   display: flex;
   justify-content: center;
-
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .drawing .drawingBox {
   position: relative;
