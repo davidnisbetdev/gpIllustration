@@ -1761,7 +1761,7 @@ input, select, textarea {
 	header p {
 		color: #aaa;
 		position: relative;
-		margin: 0 0 1.6875em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 	header h2 + p {
@@ -2134,7 +2134,7 @@ input[type="radio"] {
 		}
 
 		.image.main img {
-  			object-position: 50% 45%; /* Adjust the 25% value as needed */
+  			object-position: 50% 45%;
 		}
 
 		.image[data-position="25% 25%"] img {
@@ -2835,7 +2835,7 @@ input[type="radio"] {
 	}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 1em 0 0 0;
 		}
 
 		#main > section:first-child {
@@ -2909,7 +2909,7 @@ input[type="radio"] {
 		/* Main */
 
 			#main > section > .container {
-				padding: 4em 0 2em 0;
+				padding: 2em 0 2em 0;
 			}
 
 	}
@@ -3215,7 +3215,7 @@ input[type="radio"] {
 		/* Main */
 
 			#main > section > .container {
-				padding: 2em 0 0 0;
+				padding: 2em 0 2em 0;
 			}
 
 		/* Footer */
