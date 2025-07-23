@@ -2133,6 +2133,10 @@ input[type="radio"] {
 			object-position: center;
 		}
 
+		.image.main img {
+  			object-position: 50% 45%; /* Adjust the 25% value as needed */
+		}
+
 		.image[data-position="25% 25%"] img {
 			-moz-object-position: 25% 25%;
 			-webkit-object-position: 25% 25%;

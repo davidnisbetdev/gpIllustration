@@ -12,11 +12,11 @@ for(let i = 0; i<list.length; i++){
 
         for(let k=0; k<drawingBox.length; k++){
             drawingBox[k].classList.remove('active')
-            drawingBox[k].classList.add("hide");
+            drawingBox[k].classList.add('hide');
 
-            if(displayBox[k].getAttribute(data-item) == dataFilter || dataFilter == "all"){
+            if(drawingBox[k].getAttribute('data-item') == dataFilter || dataFilter == "all"){
                 drawingBox[k].classList.remove('hide')
-                drawingBox[k].classList.add("active");
+                drawingBox[k].classList.add('active');
             }
         }
     })

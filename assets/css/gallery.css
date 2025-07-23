@@ -45,7 +45,7 @@
   margin: 5px;
   display: block;
 }
-.drawing .itemBox.hide {
+.drawing .drawingBox.hide {
   display: none;
 }
 .drawing .drawingBox img {
