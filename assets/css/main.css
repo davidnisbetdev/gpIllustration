@@ -94,7 +94,7 @@ input, select, textarea {
 			-moz-transition: none !important;
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
-			transition: none !important;
+			transition: none;
 		}
 
 	body, input, select, textarea {
@@ -1761,7 +1761,7 @@ input, select, textarea {
 	header p {
 		color: #aaa;
 		position: relative;
-		margin: 0 0 1.6875em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 	header h2 + p {
@@ -1803,7 +1803,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #777;
+		color: #000;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 700;
@@ -1886,7 +1886,7 @@ input, select, textarea {
 	}
 
 	input[type="checkbox"],
-	input[type="radio"] {
+input[type="radio"] {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -1897,12 +1897,14 @@ input, select, textarea {
 		opacity: 0;
 		width: 1em;
 		z-index: -1;
+		position: absolute;
+  		left: -9999px;
 	}
 
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #888;
+			color: #000;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -1921,7 +1923,7 @@ input, select, textarea {
 				font-variant: normal;
 				text-rendering: auto;
 				line-height: 1;
-				text-transform: none !important;
+				text-transform: none;
 				font-family: 'Font Awesome 5 Free';
 				font-weight: 900;
 			}
@@ -2129,6 +2131,10 @@ input, select, textarea {
 			-webkit-object-position: center;
 			-ms-object-position: center;
 			object-position: center;
+		}
+
+		.image.main img {
+  			object-position: 50% 45%;
 		}
 
 		.image[data-position="25% 25%"] img {
@@ -2829,7 +2835,7 @@ input, select, textarea {
 	}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 1em 0 0 0;
 		}
 
 		#main > section:first-child {
@@ -2903,7 +2909,7 @@ input, select, textarea {
 		/* Main */
 
 			#main > section > .container {
-				padding: 4em 0 2em 0;
+				padding: 2em 0 2em 0;
 			}
 
 	}
@@ -3209,7 +3215,7 @@ input, select, textarea {
 		/* Main */
 
 			#main > section > .container {
-				padding: 2em 0 0 0;
+				padding: 2em 0 2em 0;
 			}
 
 		/* Footer */
