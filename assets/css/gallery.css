@@ -68,11 +68,24 @@
   width: 12rem;
 }
 
-.pageNumbers .pageLink {
+.pageNumbers .page-link {
   border-bottom: none;
-  background-color: #fff;
 }
 
-.pageNumbers .pageLink.active {
-  background-color: #20548B !important;
+.pageNumbers a {
+  padding: 5px 10px;
+  margin: 0 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.pageNumbers .page-link.active {
+  background: #20548B;
+  color: #fff;
+}
+
+.pageNumbers .page-link.active:hover {
+  background: #20548B;
+  color: #fff;
+  text-decoration: none;
 }
