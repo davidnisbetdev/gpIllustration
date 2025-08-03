@@ -56,13 +56,13 @@ const galleryItems = [
   { category: 'posters', path: './images/art/posters/IMG_2231.PNG' },
   { category: 'posters', path: './images/art/posters/IMG_2248.PNG' },
   { category: 'posters', path: './images/art/posters/IMG_2266.PNG' },
-  { category: 'posters', path: './images/art/posters/IMG_2267.PNG' },
   { category: 'posters', path: './images/art/posters/IMG_2279.PNG' },
   { category: 'posters', path: './images/art/posters/IMG_2285.PNG' },
   { category: 'posters', path: './images/art/posters/IMG_2286.PNG' },
   { category: 'posters', path: './images/art/posters/IMG_2299.PNG' },
   { category: 'posters', path: './images/art/posters/IMG_2303.PNG' },
-  { category: 'posters', path: './images/art/posters/IMG_2343.PNG' },
+  { category: 'posters', path: './images/art/posters/superman.PNG' },
+  { category: 'posters', path: './images/art/posters/jurassicPark.PNG' }
 ];
 
 
@@ -70,7 +70,9 @@ const itemsPerPage = 15;
 let galleryContainer = document.querySelector(".drawing");
 let paginationContainer = document.querySelector(".pageNumbers")
 let filterListItems = document.querySelectorAll(".list")
-let modalContainer = document.querySelector(".drawing")
+const modal = document.getElementById("image-modal")
+const modalImg = document.getElementById("modal-img")
+const modalClose = document.getElementById("modal-close")
 
 let state = {
     currentItems: galleryItems.filter(item => item.category === 'posters'),
@@ -141,31 +143,29 @@ function paginationListeners(){
             state.currentPage = pageNumber
             updateGalView()
         }
-    })
+    }
 
 
-}
-  filterListeners();
-  paginationListeners();
-  updateGalView();
+)}
 
 function showModal(){
-
-
-
-    modalContainer.addEventListener('click', (event) => {
+    galleryContainer.addEventListener('click', (event) => {
         const clickedBox = event.target.closest('.drawingBox')
 
         if(clickedBox){
             const dataPath = clickedBox.getAttribute('data-path')
             console.log(dataPath);
-
-            const modalSrc = dataPath
-
-            
+            modalImg.src = dataPath
+            modal.style.visibility = 'visible'
         }
-    })
+        })
+        modalClose.addEventListener("click", () => {
+          modal.style.visibility = 'hidden';
+        });
 }
+  filterListeners();
+  paginationListeners();
+  updateGalView();
+  showModal();
 
-showModal();
 })

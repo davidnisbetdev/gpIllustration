@@ -3224,6 +3224,13 @@ input[type="radio"] {
 				text-align: center;
 			}
 
+			/* On screens wider than 736px, align the footer content to the left */
+			@media screen and (min-width: 737px) {
+  			#footer .container {
+    		text-align: left;
+  			}
+}
+
 				#footer .copyright li {
 					border-left: 0;
 					display: block;
@@ -3320,3 +3327,15 @@ input[type="radio"] {
 			}
 
 	}
+
+/* Force the footer copyright list to the left on larger screens */
+@media screen and (min-width: 737px) {
+  #footer .container {
+    width: 80%;
+    text-align: left;
+  }
+}
+
+#three {
+	padding-top: 10px;
+}
