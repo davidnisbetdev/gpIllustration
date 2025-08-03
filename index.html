@@ -26,8 +26,8 @@
 					<ul>
 						<li><a href="#one" class="active">About</a></li>
 						<li><a href="#two">Portfolio</a></li>
-						<li><a href="#three">Recent Work</a></li>
-						<li><a href="#four">Contact</a></li>
+						<li><a href="https://ko-fi.com/grantplluillustration/shop" target="_blank">Shop</a></li>
+						<li><a href="#three">Contact</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -74,56 +74,29 @@
                 					<div class="galWrapper">
                     					<section class="portfolioGal">
                         					<ul>
-                            					<li class="list active" data-filter="all">All</li>
-                            					<li class="list" data-filter="posters">Posters</li>
+                            					<!-- <li class="list active" data-filter="all">All</li> -->
+                            					<li class="list active" data-filter="posters">Posters</li>
                             					<li class="list" data-filter="charDesign">Character Design</li>
                             					<li class="list" data-filter="comics">Comics</li>
                         					</ul>
                         					<div class="drawing">
-												
+
                         					</div>
+											<div class="pagination">
+												<aside class="arrowBack"></aside>
+													<div class="pageNumbers">
+
+													</div>
+												<aside class="arrowForward"></aside>
+											</div>
                     					</section>
                 					</div>
             					</div>
         					</section>
-   						 </div>
-
-						<!-- Three -->
-							<!-- <section id="three">
-								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section> -->
-
-						<!-- Four -->
-							<section id="four">
+							<!-- Contact Form -->
+							<section id="three">
 								<div class="container">
 									<h3>Contact Me</h3>
-									
 									<form method="post" action="#">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
@@ -140,6 +113,7 @@
 									</form>
 								</div>
 							</section>
+   						 </div>
 
 						<!-- Five -->
 						<!--
@@ -484,7 +458,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</section>
 
 			</div>
-
+			<div id="image-modal" class="modal">
+  				<span id="modal-close" class="modal-close">&times;</span>
+  					<div class="modal-content">
+    					<img id="modal-img" src="" alt="Full-size artwork">
+  			</div>
+  
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>

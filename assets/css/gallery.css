@@ -1,5 +1,5 @@
+
 .galWrapper {
-  padding: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .portfolioGal ul li {
@@ -37,22 +37,108 @@
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  min-height: 630px;
+  align-content: flex-start;
 }
 .drawing .drawingBox {
   position: relative;
   width: 200px;
   height: 200px;
   margin: 5px;
-  display: block;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  border-radius: 5%;
+  box-sizing: border-box;
+  filter: drop-shadow(2px gray);
 }
 .drawing .drawingBox.hide {
   display: none;
 }
+
+.drawingBox:hover {
+  cursor: pointer;
+}
+
 .drawing .drawingBox img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.25em;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 0.25em 0 1em 0;
+}
+
+.pageNumbers {
+  display: flex;
+  justify-content: space-evenly;
+  width: 12rem;
+}
+
+.pageNumbers .page-link {
+  border-bottom: none;
+}
+
+.pageNumbers a {
+  padding: 5px 10px;
+  margin: 0 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.pageNumbers .page-link.active {
+  background: #20548B;
+  color: #fff;
+}
+
+.pageNumbers .page-link.active:hover {
+  background: #20548B;
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.modal-visible{
+  display: flex;
+}
+
+.modal-content img {
+  max-height: 70vw;
+  max-width: 70vh;
+  display: block;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.03s;
+}
+
+.modal-close:hover {
+  color: #bbb;
 }
