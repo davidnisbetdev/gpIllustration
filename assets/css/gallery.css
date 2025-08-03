@@ -142,3 +142,12 @@
 .modal-close:hover {
   color: #bbb;
 }
+
+/* --- Mobile style for modal --- */
+@media screen and (max-width: 736px) {
+  .modal-close {
+    top: 15px;
+    right: 15px;
+    font-size: 44px; /* Larger for easier tapping */
+  }
+}

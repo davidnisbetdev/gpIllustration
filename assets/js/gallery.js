@@ -162,6 +162,11 @@ function showModal(){
         modalClose.addEventListener("click", () => {
           modal.style.visibility = 'hidden';
         });
+        modal.addEventListener('click', (event) => {
+            if(event.target === modal){
+                modal.style.visibility = 'hidden'
+            }
+        })
 }
   filterListeners();
   paginationListeners();
