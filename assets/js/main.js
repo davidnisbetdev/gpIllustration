@@ -73,8 +73,7 @@
 
       // Scrollex.
       $section.scrollex({
-        // CORRECTED: Mode is 'top' to fix the final section.
-        mode: "top",
+        mode: "middle",
         top: "5vh",
         bottom: "5vh",
         initialize: function () {
