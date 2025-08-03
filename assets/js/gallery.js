@@ -65,13 +65,15 @@ const galleryItems = [
   { category: 'posters', path: './images/art/posters/IMG_2343.PNG' },
 ];
 
+
 const itemsPerPage = 15;
 let galleryContainer = document.querySelector(".drawing");
 let paginationContainer = document.querySelector(".pageNumbers")
 let filterListItems = document.querySelectorAll(".list")
+let modalContainer = document.querySelector(".drawing")
 
 let state = {
-    currentItems: galleryItems,
+    currentItems: galleryItems.filter(item => item.category === 'posters'),
     currentPage: 1
 }
 
@@ -90,7 +92,7 @@ function renderGallery(itemsToShow, galleryContainer) {
   let galleryString = "";
 
   itemsToShow.forEach((item) => {
-    galleryString += `<div class="drawingBox" data-item="${item.category}"><img src="${item.path}"></div>`;
+    galleryString += `<div class="drawingBox" data-item="${item.category}" data-path="${item.path}"><img src="${item.path}"></div>`;
   });
 
   galleryContainer.innerHTML = galleryString;
@@ -140,10 +142,30 @@ function paginationListeners(){
             updateGalView()
         }
     })
+
+
+}
+  filterListeners();
+  paginationListeners();
+  updateGalView();
+
+function showModal(){
+
+
+
+    modalContainer.addEventListener('click', (event) => {
+        const clickedBox = event.target.closest('.drawingBox')
+
+        if(clickedBox){
+            const dataPath = clickedBox.getAttribute('data-path')
+            console.log(dataPath);
+
+            const modalSrc = dataPath
+
+            
+        }
+    })
 }
 
-filterListeners()
-paginationListeners()
-
-updateGalView()
+showModal();
 })
