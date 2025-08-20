@@ -1,19 +1,10 @@
-Website from template created for Grant Pllu Illustration.
+Website from HTML5 UP template created for Grant Pllu Illustration. This was customised and had bespoke JavaScript/HTML for client requirements.
 
-** Read Only by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license): AJ |aj@lkn.io | @ajlkn
 
-AJ
-aj@lkn.io | @ajlkn
-
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
 
 
 Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
 
 	Icons:
 		Font Awesome (fontawesome.io)
@@ -22,4 +13,5 @@ Credits:
 		jQuery (jquery.com)
 		Scrollex (github.com/ajlkn/jquery.scrollex)
 
-		Responsive Tools (github.com/ajlkn/responsive-tools) **
+		Responsive Tools (github.com/ajlkn/responsive-tools)
+
